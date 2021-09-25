@@ -1,0 +1,9 @@
+.all-places{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.shortlist-cart{
+    position: sticky;
+}

@@ -1,0 +1,25 @@
+/* box shadow design copied from google */
+.single-place{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 20px;
+}
+
+.single-place img{
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
+}
+.details{
+    text-align: start;
+}
+
+.yt-icon{
+    color: red;
+    font-size: 20px;
+    margin: 10px 20px
+}
+.info-icon{
+    color: deepskyblue;
+    font-size: 20px;
+    margin: 10px 20px
+}

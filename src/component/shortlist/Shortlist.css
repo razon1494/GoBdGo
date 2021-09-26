@@ -1,9 +1,11 @@
 .shortlist-container{
+    box-shadow: -5px -5px 30px 5px rgba(255, 245, 238,0.99), 5px 5px 30px 5px #797d62;
     border-left: 3px dashed darkgray;
     padding: 10px 60px 30px 20px;
     color: #603808;
     background-color:rgba(255, 245, 238, 0.623);
     border-radius: 5px;
+    margin-left: 30px;
 }
 h6{
     color: gray;
@@ -17,4 +19,20 @@ p{
 }
 .shortlist-containe h3{
     text-align: center;
+}
+.btn-class{
+    text-align: center;
+}
+.reload{
+    border: 1px solid #797d62;
+    padding: 5px 30px;
+    font-size: 19px;
+    background-color: #797d62;
+    color: white;
+    border-radius: 5px;
+}
+
+.reload:hover{
+    background-color: #5e503f;
+    font-size: 18px;
 }

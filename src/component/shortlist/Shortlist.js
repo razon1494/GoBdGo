@@ -3,16 +3,20 @@ import ShortlistDetails from '../ShortlistDetails/ShortlistDetails';
 
 import './Shortlist.css'
 const Shortlist=(props) => {
+    // Destructuring array from props
     const {shortlist}=props;
     console.log(shortlist);
-    let grandTotal=0;
-    shortlist.forEach(element => {
-        grandTotal=grandTotal+element.cost*element.count;
-    });
+    //total trips count
     let trips=0;
     shortlist.forEach(element => {
         trips=trips+element.count;
     });
+    // Grand Total Cost Count
+    let grandTotal=0;
+    shortlist.forEach(element => {
+        grandTotal=grandTotal+element.cost*element.count;
+    });
+
 
     return (
         <div className='shortlist-container'>
@@ -21,6 +25,7 @@ const Shortlist=(props) => {
             <h6>Total Selected unique Places: <span className='count'> {shortlist.length}</span></h6>
             <h6>Total Selected Trips:<span className='count'> {trips}</span></h6>
             <br />
+            {/* Heading of cart list */}
             <div className="row">
                   <div className="col-md-5">
                     <p>Place(count)</p>
@@ -49,6 +54,12 @@ const Shortlist=(props) => {
                 <div className="col-md-3">
                     <h5>&#2547;{grandTotal}</h5>
                 </div>
+            </div>
+            <div>
+                <div className='btn-class'>
+                    <button onClick={props.planAgain} className='reload mt-3'>Plan Again</button>
+                </div>
+
             </div>
 
 

@@ -3,6 +3,7 @@ import Places from '../places/Places';
 import Shortlist from '../shortlist/Shortlist';
 import './MainBody.css'
 const MainBody=() => {
+    //state declaring
     const [places, setPlaces]=useState([]);
     const [shortlist, setShortlist]=useState([]);
 //importing data from JSON file
@@ -13,12 +14,12 @@ const MainBody=() => {
           setPlaces(data);
     })
     }, [])
-
+//add to shortlist button click handler
     const addToShortList=place => {
-        //checking if the place is added beofre or not
         place.count=place.count+1;
         let flag=true;
         let newShortList=[];
+        //checking if the place is added beofre or not
         shortlist.forEach(element => {
             if(element.key===place.key) {
                 console.log(element.count);
@@ -30,13 +31,20 @@ const MainBody=() => {
             newShortList=[...shortlist, place];
         }
         setShortlist(newShortList);
-
+    }
+    //plan again click handler
+    const planAgain=() => {
+        shortlist.map(item => {
+            item.count=0;
+        })
+        setShortlist([]);
     }
 
     return (
         <div>
             <div className="main d-md-flex container-fluid">
-                <div className="all-places mx-5">
+                {/* Main Section of places */}
+                <div className="all-places mx-2">
                     {
                         places.map(place => <Places
                             key={place.key}
@@ -45,8 +53,9 @@ const MainBody=() => {
                         />)
                     }
                 </div>
+                {/* Side Cart */}
                 <div className="shortlist-cart my-5 mx-2">
-                    <Shortlist shortlist={shortlist}/>
+                    <Shortlist shortlist={shortlist} planAgain={planAgain}/>
                 </div>
             </div>
 

@@ -15,7 +15,12 @@
     text-align: start;
 }
 .single-place h2{
-    color: rgba(255, 68, 0, 0.76);
+    color: rgba(255, 68, 0, 0.705);
+    /* color: #80b918;
+    color: #2dc653;
+    color: #219ebc;
+    color: YellowGreen;
+    color:tomato; */
     margin-top:10px;
     font-weight: 600;
 }
@@ -29,15 +34,12 @@
     border: 1px solid #797d62;
     padding: 5px 30px;
     font-size: 19px;
-    background-color: #ef233bb6;
-    /* background-color: #ff758e; */
-    /* background-color: #e56b6fc9; */
     background-color: #797d62;
     color: white;
     border-radius: 5px;
 }
 .add-to-list-btn:hover{
-    background-color: #ef233bb6;
+    background-color: #5e503f;
     font-size: 18px;
 }
 

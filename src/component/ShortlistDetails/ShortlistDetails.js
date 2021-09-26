@@ -6,8 +6,7 @@ const ShortlistDetails=(props) => {
     const individualTotal=cost*count;
     return (
         <div>
-            <div className="row">
-
+            <div className="row calculation-part">
                 <div className="col-md-5">
                     <p>{placeName}({count})</p>
                 </div>

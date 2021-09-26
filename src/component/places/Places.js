@@ -1,7 +1,6 @@
 import React from 'react';
 import './Places.css'
 const Places=(props) => {
-    // console.log(props.place);
     //destructuring to get object file of single place
     const {place}=props;
     const shortlist=props.shortlist;
@@ -9,7 +8,7 @@ const Places=(props) => {
     const {placeName, speciality, distance, transport, cost, image, season}=place;
     return (
         <div>
-            <div className="single-place text-center m-3">
+            <div className="single-place text-center my-3 mx-1">
                 <img src={image} alt="place"/>
                 <h2>{placeName}</h2>
                 <h4>{speciality}</h4>
@@ -17,7 +16,7 @@ const Places=(props) => {
                 <p>Season: {season}</p>
                 <p>Distance From Dhaka: {distance}KM</p>
                 <p>Transport: {transport}</p>
-                    <p>Estimated cost/person: {cost} taka</p>
+                    <p>cost/person: {cost} taka</p>
                 </div>
 
                 <button className='add-to-list-btn' onClick={() => shortlist(place)}><i className="fas fa-hand-pointer"></i> Add To Short List</button>

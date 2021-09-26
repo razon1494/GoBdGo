@@ -35,7 +35,7 @@ const MainBody=() => {
 
     return (
         <div>
-            <div className="main d-md-flex">
+            <div className="main d-md-flex container-fluid">
                 <div className="all-places mx-5">
                     {
                         places.map(place => <Places

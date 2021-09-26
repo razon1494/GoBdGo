@@ -1,7 +1,9 @@
 /* box shadow design copied from google */
 .single-place{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px dotted gray;
     border-radius: 20px;
+    padding: 10px 0px;
 }
 
 .single-place img{
@@ -12,14 +14,40 @@
 .details{
     text-align: start;
 }
+.single-place h2{
+    color: rgba(255, 68, 0, 0.76);
+    margin-top:10px;
+    font-weight: 600;
+}
+.single-place h4{
+    color:darkgray;
+}
+.single-place p{
+    color: gray;
+}
+.add-to-list-btn{
+    border: 1px solid #797d62;
+    padding: 5px 30px;
+    font-size: 19px;
+    background-color: #ef233bb6;
+    /* background-color: #ff758e; */
+    /* background-color: #e56b6fc9; */
+    background-color: #797d62;
+    color: white;
+    border-radius: 5px;
+}
+.add-to-list-btn:hover{
+    background-color: #ef233bb6;
+    font-size: 18px;
+}
 
 .yt-icon{
     color: red;
-    font-size: 20px;
-    margin: 10px 20px
+    font-size: 22px;
+    margin: 10px 7px;
 }
 .info-icon{
     color: deepskyblue;
-    font-size: 20px;
-    margin: 10px 20px
+    font-size: 22px;
+    margin: 10px 7px
 }

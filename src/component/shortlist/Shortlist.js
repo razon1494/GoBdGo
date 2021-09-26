@@ -16,9 +16,11 @@ const Shortlist=(props) => {
 
     return (
         <div className='shortlist-container'>
-            <h3>Shortlist</h3>
-            <h6>Total Selected unique Places: {shortlist.length}</h6>
-            <h6>Total Selected Trips: {trips} </h6>
+            <h3 className='text-center'>Shortlist</h3>
+            <br />
+            <h6>Total Selected unique Places: <span className='count'> {shortlist.length}</span></h6>
+            <h6>Total Selected Trips:<span className='count'> {trips}</span></h6>
+            <br />
             <div className="row">
                   <div className="col-md-5">
                     <p>Place(count)</p>
@@ -42,10 +44,10 @@ const Shortlist=(props) => {
             <hr />
             <div className="row">
                 <div className="col-md-9">
-                    <h3>Grand Total: </h3>
+                    <h5>Grand Total: </h5>
                 </div>
                 <div className="col-md-3">
-                    <h3>&#2547;{grandTotal}</h3>
+                    <h5>&#2547;{grandTotal}</h5>
                 </div>
             </div>
 

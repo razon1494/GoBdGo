@@ -3,11 +3,11 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            <nav className="navbar navbar-dark text-light bg-dark">
+            <nav className="navbar navigation">
   <div className="container-fluid">
-    <h2 className="px-5">Go BD Go Travels</h2>
+    <h1 className="px-5 fw-bold"> <span id='go'>Go BD Go </span><span id='travels'>Travels</span></h1>
     <form className="px-5">
-      <h3>Your Total Budget: 10000 Taka</h3>
+      <h3 id='budget'>Your Total Budget: 10000 Taka</h3>
     </form>
   </div>
 </nav>

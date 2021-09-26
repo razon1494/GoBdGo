@@ -5,7 +5,6 @@ import './Shortlist.css'
 const Shortlist=(props) => {
     // Destructuring array from props
     const {shortlist}=props;
-    console.log(shortlist);
     //total trips count
     let trips=0;
     shortlist.forEach(element => {

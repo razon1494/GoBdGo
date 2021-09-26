@@ -22,7 +22,6 @@ const MainBody=() => {
         //checking if the place is added beofre or not
         shortlist.forEach(element => {
             if(element.key===place.key) {
-                console.log(element.count);
                 flag=false;
                 newShortList =[...shortlist]
             }

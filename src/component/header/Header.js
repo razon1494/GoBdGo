@@ -9,7 +9,7 @@ const Header = () => {
             <h1 className="px-5 fw-bold"> <span id='go'>Go BD Go </span><span id='travels'>Travels</span></h1>
             <form className="px-5">
               {/* BUdget is given */}
-              <h3 id='budget'>Make Your Tour Plan on this budget: 150000 Taka</h3>
+              <h3 id='budget'>Make Your Tour Plan on this budget: <span id='amount-budget'> 150000</span>  Taka</h3>
             </form>
   </div>
 </nav>

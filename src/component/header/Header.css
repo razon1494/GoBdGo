@@ -5,9 +5,18 @@
     color: whitesmoke;
 }
 #travels{
-    color: coral;
+    /* color: coral;
+    color: orangered;
+    color: tomato;
+    color:#9ef01a;
+    color: #aacc00; */
+    color:#80ed99;
 }
 
 #budget{
     color: LavenderBlush;
+}
+
+#amount-budget{
+    color:#80ed99;
 }

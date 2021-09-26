@@ -26,6 +26,7 @@ const MainBody=() => {
                 newShortList =[...shortlist]
             }
         });
+
         if(flag===true) {
             newShortList=[...shortlist, place];
         }
@@ -33,9 +34,9 @@ const MainBody=() => {
     }
     //plan again click handler
     const planAgain=() => {
-        shortlist.map(item => {
-            item.count=0;
-        })
+        shortlist.forEach(element => {
+            element.count=0;
+        });
         setShortlist([]);
     }
 

@@ -1,9 +1,12 @@
 /* box shadow design copied from google */
 .single-place{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    border: 1px dotted gray;
     border-radius: 20px;
     padding: 10px 0px;
+    background-color: aliceblue;
+}
+.single-place:hover{
+    background-color: rgb(240, 255, 255);
 }
 
 .single-place img{

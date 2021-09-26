@@ -15,7 +15,7 @@ const ShortlistDetails=(props) => {
                     <p>{count}*{cost}</p>
                 </div>
                 <div className="col-md-2">
-                    <p>{individualTotal}</p>
+                    <p>&#2547;{individualTotal}</p>
                 </div>
 
             </div>

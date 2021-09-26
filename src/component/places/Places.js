@@ -22,8 +22,9 @@ const Places=(props) => {
 
                 <button className='btn btn-secondary' onClick={() => shortlist(place)}><i className="fas fa-hand-pointer"></i> Add To Short List</button>
                 <br />
-                <i className="fas info-icon fa-info-circle"></i>
-                <i className="fab  yt-icon  fa-youtube"></i>
+                <a target="_blank"  href="https://nijhoom.com/best-places-to-visit-in-bangladesh/"><i className="fas info-icon fa-info-circle"></i></a>
+                <a target="_blank"  href="https://youtu.be/a45uOtCVES4"><i href="https://youtu.be/a45uOtCVES4" className="fab  yt-icon  fa-youtube"></i></a>
+
             </div>
 
         </div>

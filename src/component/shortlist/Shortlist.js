@@ -42,10 +42,10 @@ const Shortlist=(props) => {
             <hr />
             <div className="row">
                 <div className="col-md-9">
-                    <h2>Grand Total: </h2>
+                    <h3>Grand Total: </h3>
                 </div>
                 <div className="col-md-3">
-                    <h2>{grandTotal}</h2>
+                    <h3>&#2547;{grandTotal}</h3>
                 </div>
             </div>
 
